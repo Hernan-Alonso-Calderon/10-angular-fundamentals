@@ -5,11 +5,6 @@
   background-color: variables.$color-background;
 }
 
-.accordion-header__image {
-  width: 100%;
-  height: auto;
-}
-
 .banner {
   @include mixins.container-column();
   padding-bottom: 200px;

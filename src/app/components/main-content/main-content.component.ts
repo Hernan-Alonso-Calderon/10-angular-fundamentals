@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { AcordionComponent } from '../acordion/acordion.component';
+import { AccordionSectionComponent } from '../accordion-section/accordion-section.component';
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [AcordionComponent],
+  imports: [AccordionSectionComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss',
 })
