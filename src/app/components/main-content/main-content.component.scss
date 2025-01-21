@@ -1,0 +1,72 @@
+@use "../../ui/styles/variables.scss" as variables;
+@use "../../ui/styles/mixins.scss" as mixins;
+
+.main {
+  background-color: variables.$color-background;
+}
+
+.accordion-header__image {
+  width: 100%;
+  height: auto;
+}
+
+.banner {
+  @include mixins.container-column();
+  padding-bottom: 200px;
+  padding-top: 200px;
+
+  &__container {
+    width: 90%;
+
+    @media (min-width: 992px) {
+      width: 80%;
+    }
+  }
+
+  &__title {
+    @include mixins.font(42px);
+    width: 100%;
+    padding-bottom: 200px;
+
+    @media (min-width: 992px) {
+      width: 60%;
+      font-size: 60px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.article {
+  @include mixins.container();
+
+  &__container {
+    width: 90%;
+
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+
+  &__title {
+    @include mixins.font(32px, 600);
+    padding-bottom: 20px;
+  }
+
+  &__sub-title {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    padding-bottom: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: variables.$color-link;
+  }
+}
